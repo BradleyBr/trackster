@@ -15,14 +15,16 @@ var API_KEY = '4f6de2993aa304bcc28c04bf091980b2';
   Append each "row" to the container in the body to display all tracks.
 */
 Trackster.renderTracks = function(tracks) {
+  $('#trackcontainer').empty();
   for (var i = 0; i < tracks.length; i++) {
+    var mediumAlbumArt = tracks[i].image[1]["#text"];
     var $trackrow = $("  <div class='container-fluid row' id='tracktable'>"
-     + "    <div class='col-xs-2 play'><a href='https://youtu.be/eI_O5_tJ1hA'>"
+     + "    <div class='col-xs-2 play'><a href='" + tracks[i].url +"'>"
      + "    <i class='fa fa-play-circle-o fa-2x'></i></a></div>"
-     + "    <div class='col-xs-2 song'>bowy dog</div>"
-     + "    <div class='col-xs-4 artist'>bowy and the zingers</div>"
-     + "    <div class='col-xs-2 artwork'></div>"
-     + "    <div class='col-xs-2 listeners'>1000</div>"
+     + "    <div class='col-xs-2 song'>" + tracks[i].name + "</div>"
+     + "    <div class='col-xs-4 artist'>" + tracks[i].artist + "</div>"
+     + "    <div class='col-xs-2 artwork'><img src='" + mediumAlbumArt +"'></div>"
+     + "    <div class='col-xs-2 listeners'>" + tracks[i].listeners + "</div>"
      + "  </div>"
      + "</div>");
       $('#trackcontainer').append($trackrow);
