@@ -55,3 +55,38 @@ header #searchbutton {
 header #searchbutton:hover {
   background-color: rgb(255, 102, 204);
 }
+
+/*
+track table styles
+*/
+
+#trackheader {
+  background-color: rgb(104, 0, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
+#trackcontainer {
+  height: 5rem;
+  line-height: 5rem;
+}
+
+#tracktable {
+  text-align: center;
+  color: rgb(74, 74, 74);
+  font-size: 1rem;
+  font-family: "Work Sans";
+  border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+
+
+#tracktable:hover {
+  background-color: rgb(239, 237, 242);
+}
+
+.play {
+  text-align: right;
+  line-height: 5.5rem;
+}
