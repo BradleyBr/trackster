@@ -12,6 +12,12 @@ html {
   header styles
 */
 
+@keyframes headeranimation {
+  50% {color: #337ab7;}
+  100% {color: rgb(255, 0, 171);}
+  }
+
+
 header {
   background-color: rgb(35, 2, 63);
   height: 8rem;
@@ -54,7 +60,23 @@ header #searchbutton {
 
 header #searchbutton:hover {
   background-color: rgb(255, 102, 204);
+  cursor: pointer;
 }
+
+/*
+track header
+*/
+
+.songheader {
+  text-indent: 7rem;
+}
+
+.songheader:hover, .artistheader:hover, .listenersheader:hover {
+  color: black;
+  cursor: pointer;
+}
+
+
 
 /*
 track table styles

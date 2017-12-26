@@ -27,23 +27,27 @@
   </header>
 
   <!-- track list header columns -->
-  <div class="row" id="trackheader">
-    <span class="col-xs-5 songheader">Song</span>
-    <span class="col-xs-3 artistheader">Artist</span>
-    <span class="col-xs-2 artworkheader">Artwork</span>
-    <span class="col-xs-2 listenersheader">Listeners</span>
+  <div class="container-fluid" id="trackparent">
+    <div class="row" id="trackheader">
+      <span class="col-xs-5 songheader">Song</span>
+      <span class="col-xs-4 artistheader">Artist</span>
+      <span class="col-xs-1 artworkheader">Artwork</span>
+      <span class="col-xs-1 listenersheader">Listeners</span>
+      <span class="col-xs-1">Streamable</span>
+    </div>
+
+    <!-- track table query from header -->
+    <div class="row container-fluid" id="trackcontainer">
+      <!-- <div class="container-fluid row" id="tracktable">
+        <div class="col-xs-2 play"><a href="https://youtu.be/eI_O5_tJ1hA">
+          <i class="fa fa-play-circle-o fa-2x"></i></a></div>
+        <div class="col-xs-2 song">bowy dog</div>
+        <div class="col-xs-4 artist">bowy and the zingers</div>
+        <div class="col-xs-2 artwork"></div>
+        <div class="col-xs-2 listeners">1000</div>
+      </div> -->
+    </div>
   </div>
 
-  <!-- track table query from header -->
-  <div class="row" id="trackcontainer">
-    <!-- <div class="container-fluid row" id="tracktable">
-      <div class="col-xs-2 play"><a href="https://youtu.be/eI_O5_tJ1hA">
-        <i class="fa fa-play-circle-o fa-2x"></i></a></div>
-      <div class="col-xs-2 song">bowy dog</div>
-      <div class="col-xs-4 artist">bowy and the zingers</div>
-      <div class="col-xs-2 artwork"></div>
-      <div class="col-xs-2 listeners">1000</div>
-    </div> -->
-  </div>
 </body>
 </html>
