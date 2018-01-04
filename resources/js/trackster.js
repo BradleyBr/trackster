@@ -79,7 +79,7 @@ var sortListeners = function(a, b) {return a.children[4].textContent -
 */
 Trackster.searchTracksByTitle = function(title) {
   $.ajax({
-    url:'http://ws.audioscrobbler.com/2.0/?method=track.search&track='
+    url:'https://ws.audioscrobbler.com/2.0/?method=track.search&track='
       + title + '&api_key=' + API_KEY + '&format=json',
 
     beforeSend: function() {
